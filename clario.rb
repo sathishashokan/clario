@@ -2,4 +2,4 @@ def new_function
     puts "Hi"
 end
 
-new_function
+new_functions
