@@ -1,5 +1,6 @@
 def reference_code(code)
-    arr = code.split("-")
+    slash_to_dash = code.tr('/', '-')
+    arr = slash_to_dash.split("-")
     if arr.length == 2
         return code
     elsif arr.length == 3
@@ -12,5 +13,5 @@ def reference_code(code)
 end
 
 puts reference_code("K7DTY-BXV6T")
-puts reference_code("K7DTY-BXV6T-2")
-puts reference_code("K7DTY-BXV6T-3")
+puts reference_code("K7DTY/BXV6T/2")
+puts reference_code("K7DTY/BXV6T-3")
